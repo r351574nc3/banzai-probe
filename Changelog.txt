@@ -1,0 +1,152 @@
+2.3.1 (2012-03-11)
+------------------
+[FIX]	Error on first request when deployed to Liferay
+[FIX]	Log files created by a Logback SiftingAppender should be listed
+[FIX]	Missing dependency in another app can cause NoClassDefFoundError when viewing Logs
+[FIX]	AJAX start/stop results in incorrect status text color
+[MISC]	Improved support for JBoss 5, 6, and 7
+[MISC]	Update xstream to 1.2.2, providing improved support for non-Sun JVMs
+
+2.3.0 (2011-10-17)
+------------------
+[NEW]	Support for Tomcat 7
+[NEW]	Add Spanish translation
+[FIX]	SQL query results should not hide matching values of adjacent rows
+[FIX]	Incorrect SQL column name when using alias; columns missing if duplicate names
+[FIX]	Pagination links does not work on SQL query results
+[FIX]	Error "You have passed wrong parameters to this page." when trying to stop an app running in ROOT context
+[FIX]	Log resolver sees slf4j bridges (e.g. log4j-over-slf4j) as base log types
+[FIX]	Use standard abbreviations for bytes (B), kilobytes (KB), etc.
+[FIX]	Connectors tab shows an error when using Tomcat with APR
+[FIX]	Error viewing JSP files on Tomcat 7
+[FIX]	Error undeploying application on Tomcat 7
+[FIX]	Connector stats are not populated on Tomcat 7
+[FIX]	Deploying PSI Probe should not disable async in Tomcat 7
+[FIX]	Error viewing servlets on Tomcat 7
+[FIX]	Pre-compiled JSPs causing errors on Tomcat 7
+[FIX]	Error compiling JSPs on Tomcat 7.0.16 and higher
+[FIX]	Error viewing context descriptor on Tomcat 7
+
+2.2.3 (2011-07-04)
+------------------
+[FIX]	Error on startup under Tomcat 5: UnsupportedClassVersionError for TomcatJdbcPoolDatasourceAccessor running on Java 1.4
+[FIX]	Exception prevents viewing context attributes
+
+2.2.2 (2011-05-28)
+------------------
+[FIX]	Memory page error when using JRockit or IBM JDK
+[FIX]	Problem redeploying root context
+[FIX]	Can't open log files for root context
+[FIX]	Can't deploy .war when webapps directory and java.io.tmpdir are on different file systems
+
+2.2.1 (2011-04-21)
+------------------
+[FIX]	Error when server OS does not have English as its default language
+
+2.2.0 (2011-04-17)
+------------------
+[NEW]	Support for Tomcat 6 (except cluster info)
+[NEW]	Support for SpringSource tc Server
+[NEW]	Support for Executors (ThreadPools)
+[NEW]	Support for tomcat-jdbc datasources
+[NEW]	Support for logback
+[NEW]	Change logging levels at runtime through web UI
+[NEW]	Add kill thread feature on Connectors tab
+[NEW]	Display, track, and query against global datasources
+[NEW]	Track and graph processing time for Connectors
+[FIX]	'What are those abbreviations?' does not return help text
+[FIX]	Allow "manager-gui" role everywhere "manager" role is currently allowed
+[FIX]	Confirmation message for deploying ROOT.war not complete
+[FIX]	Filter Mappings do not display on Tomcat 6
+[FIX]	Selecting English should display text in English, not the client's default language
+[FIX]	When request processor's thread name is long, it should not overlap the URL
+[MISC]  Update Displaytag to 1.1.1
+[MISC]	Allow mouse-over of abbreviated value to reveal original value
+[MISC]	Change "Force Garbage Collection" to "Advise Garbage Collection"
+[MISC]	Differentiate between Busy and Established connections in JDBC Usage bars
+[MISC]	Display class names of arrays with a more user-friendly format
+[MISC]	Move request/error count and processing time totals below graphs on application summary page
+[MISC]	Move RequestProcessor information from "Status" tab to "Connectors" tab
+[MISC]	Move ThreadPool information from "Status" tab to "Threads" tab
+
+2.1.2 (2010-12-12)
+------------------
+[FIX]	NPE in DatasourceStatsCollectorBean
+
+2.1.1 (2010-12-04)
+------------------
+[FIX]	Credit famfamfam.com for "Silk" icons
+[FIX]	Can't follow multiple logs in separate tabs/windows
+[FIX]	Errors in probe.log when viewing Logs tab in Tomcat 6
+[FIX]	Unnecessary reflow when chart images first load
+[FIX]	HTML in log tail should be escaped
+[MISC]	Use HashSet for Instruments.processedObjects
+
+2.1.0 (2010-09-26)
+------------------
+[NEW]	Partial support for Tomcat 7
+[FIX]	Statistics charts remain visible when application is stopped
+[FIX]	Links to view servlets and servlet mappings for all applications
+[FIX]	Link to view sessions for all applications
+[FIX]	Remove unnecessary dependencies
+[FIX]	Executing queries against a datasource doesn't display results
+[FIX]	Confirm dialog for "Undeploy" link on application summary page should not be empty
+[FIX]	Cluster traffic graphs sometimes do not display
+[FIX]	Can't see info in the "Connector stats" and "Status" pages in JBoss
+[FIX]	Resetting datasource in JBoss always reports failure, even on success
+[FIX]	Human-readable durations should not always have milliseconds of 0
+[FIX]	EU flag is missing in session list
+[MISC]	Configure statistics collection with command line properties
+[MISC]	Add translation credits in footer
+[MISC]	Allow manual reset of connector stats on the fly
+[MISC]	Save user's font size settings of log view panel
+[MISC]	Add usage graphs for DB connection pools
+[MISC]	View cumulative and combined application statistics charts
+[MISC]	Update Spring Framework to 2.5.6.SEC01
+[MISC]	Configurable parameter so Probe ignores its own traffic in cumulative chart
+[MISC]	Link deployment success message to application summary page
+[MISC]	Italian translation
+[MISC]	Updates to German translation
+[MISC]	IP address recognition for forwarded requests
+
+2.0.4 (2010-05-23)
+------------------
+[FIX]	Exception in another app's code prevents viewing session contents
+[FIX]	Application's session list is empty in IE7
+[FIX]	AJAX start/stop results in incorrect status text color
+
+2.0.3 (2010-05-05)
+------------------
+[FIX]	Deploying .war file to RHEL server using IE7 does not work correctly
+
+2.0.2 (2010-04-21)
+------------------
+[NEW]	Support for JBoss Application Server 3.2, 4.0, 4.2, 4.3, 5.0, 5.1
+
+2.0.1 (2010-01-18)
+------------------
+[FIX]	JTA 1.1 (Java 5) dependency used instead of JTA 1.0.1B (Java 1.4)
+
+2.0.0 (2010-01-16)
+------------------
+[NEW]	IDE-agnostic project structure using Maven
+[NEW]	Add dynamic locale selector
+[NEW]	Statistics time charts for applications
+[FIX]	Project should not contain dependencies on sun.* packages
+[FIX]	Session timeout should be displayed as minutes, not seconds
+[FIX]	Duplicate log entries
+[FIX]	log4j log files are invisible if commons-logging-1.1.1.jar is in any context's classpath
+[FIX]	Allow for embedded Tomcat
+[FIX]	Tomcat auto-deploy can corrupt context
+[FIX]	UploadWarController contains reference to missing property
+[FIX]	Log tailing doesn't work correctly with Google Chrome
+[FIX]	Log tailing is not traffic optimized
+[FIX]	Reduce logging output from StatsCollection
+[MISC]	Links to issue tracker and discussion board on error page
+[MISC]	Brazilian Portuguese Translation
+[MISC]	Include pre-compiled JSP resources in .war file
+[MISC]	Update Spring Framework to 2.0.1
+[MISC]	French translation
+[MISC]	Update prototype to 1.6.1 and scriptaculous to 1.8.3
+[MISC]	View servlets for all applications by removing "webapp" parameter from URL
+[MISC]	View sessions for all applications by removing "webapp" parameter from URL
